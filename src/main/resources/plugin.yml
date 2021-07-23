@@ -1,0 +1,22 @@
+name: Sanoj-Core
+version: ${project.version}
+main: de.davidcraft.sanoj.core.main
+api-version: 1.16
+authors: [ DavidCraft ]
+description: Server Core Plugin für Sanoj
+website: https://davidcraft.de
+depend: [ PremiumVanish ]
+
+commands:
+  ram:
+    description: Ram Usage Command
+  regeln:
+    description: View the Rules
+
+permissions:
+  prefix:
+    prefix.admin:
+    description: Set Prefix Color
+  group:
+    regeln:
+    default: op
