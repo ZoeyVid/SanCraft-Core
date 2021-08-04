@@ -2,6 +2,7 @@ package de.davidcraft.sanoj.core.listeners;
 
 import de.davidcraft.sanoj.core.main;
 import de.myzelyam.api.vanish.VanishAPI;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -11,13 +12,15 @@ public class QuitListener implements Listener {
 
     @EventHandler
     public void onQuit(PlayerQuitEvent event) {
-        event.setQuitMessage("");
         Player player = event.getPlayer();
-        if (VanishAPI.isInvisible(player)) return;
+        if (VanishAPI.isInvisible(player)) {
+            event.setQuitMessage("");
+            return;
+        }
         if (player.hasPermission("prefix.admin") || player.isOp()) {
-            main.sendQuitMessage(player.getName(), true);
+            event.setQuitMessage(ChatColor.DARK_RED + "« " + ChatColor.RED + player);
         } else {
-            main.sendQuitMessage(player.getName(), false);
+            event.setQuitMessage(ChatColor.DARK_RED + "« " + ChatColor.GREEN + player);
         }
     }
 
