@@ -18,7 +18,7 @@ public class ChatListener implements Listener {
         if (event.getMessage().toLowerCase(Locale.ROOT).equals("weißwurst") && !player.hasPermission("group.regeln")) {
             event.setCancelled(true);
             Bukkit.getScheduler().runTask(main.instance, () -> {
-                String Command = "lp user " + player.getName() + " permission set group.regeln true";
+                String Command = "lp user " + player.getUniqueId() + " permission set group.regeln true";
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), Command);
             });
         }
