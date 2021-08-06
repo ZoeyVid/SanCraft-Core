@@ -50,9 +50,9 @@ public class JoinListener implements Listener {
             return;
         }
         if (player.hasPermission("prefix.admin") || player.isOp()) {
-            event.setJoinMessage(org.bukkit.ChatColor.DARK_GREEN + "» " + org.bukkit.ChatColor.RED + player);
+            event.setJoinMessage(org.bukkit.ChatColor.DARK_GREEN + "» " + org.bukkit.ChatColor.RED + player.getName());
         } else {
-            event.setJoinMessage(org.bukkit.ChatColor.DARK_GREEN + "» " + org.bukkit.ChatColor.GREEN + player);
+            event.setJoinMessage(org.bukkit.ChatColor.DARK_GREEN + "» " + org.bukkit.ChatColor.GREEN + player.getName());
         }
     }
 }

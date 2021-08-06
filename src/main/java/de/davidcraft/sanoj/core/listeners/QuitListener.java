@@ -18,9 +18,9 @@ public class QuitListener implements Listener {
             return;
         }
         if (player.hasPermission("prefix.admin") || player.isOp()) {
-            event.setQuitMessage(ChatColor.DARK_RED + "« " + ChatColor.RED + player);
+            event.setQuitMessage(ChatColor.DARK_RED + "« " + ChatColor.RED + player.getName());
         } else {
-            event.setQuitMessage(ChatColor.DARK_RED + "« " + ChatColor.GREEN + player);
+            event.setQuitMessage(ChatColor.DARK_RED + "« " + ChatColor.GREEN + player.getName());
         }
     }
 
