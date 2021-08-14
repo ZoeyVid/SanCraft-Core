@@ -14,7 +14,7 @@ public class RegelnCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = Bukkit.getPlayer(sender.getName());
         TextComponent hyperlink = new TextComponent();
-        hyperlink.setText("hier");
+        hyperlink.setText("hier*");
         hyperlink.setColor(ChatColor.DARK_AQUA);
         hyperlink.setUnderlined(true);
         hyperlink.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://sancraft.de/skin/"));
@@ -35,6 +35,7 @@ public class RegelnCommand implements CommandExecutor {
             player.sendMessage(ChatColor.DARK_AQUA + "Bangründe müssen nicht in den Regeln stehen!");
             player.sendMessage(ChatColor.DARK_AQUA + "Logs werden maximal einen Monat mit Weißwurst gespeichert! (IPs, Nachrichten, Ausgelöste Commands)");
             player.sendMessage(ChatColor.DARK_AQUA + "Werbung ist in jeglicher Hinsicht verboten!");
+            player.sendMessage(ChatColor.DARK_AQUA + "* https://sancraft.de/skin/");
         }
         if (!(args.length == 0)) {
             switch (args[0].toLowerCase()) {

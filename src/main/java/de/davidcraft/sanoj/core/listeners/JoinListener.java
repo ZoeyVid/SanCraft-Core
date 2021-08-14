@@ -18,7 +18,7 @@ public class JoinListener implements Listener {
         Player player = event.getPlayer();
         if (!player.hasPermission("group.regeln")) {
             TextComponent hyperlink = new TextComponent();
-            hyperlink.setText("hier");
+            hyperlink.setText("hier*");
             hyperlink.setColor(ChatColor.DARK_AQUA);
             hyperlink.setUnderlined(true);
             hyperlink.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://sancraft.de/skin/"));
@@ -42,6 +42,7 @@ public class JoinListener implements Listener {
             player.sendMessage(ChatColor.DARK_AQUA + "Logs werden maximal einen Monat mit Weißwurst gespeichert! (IPs, Nachrichten, Ausgelöste Commands)");
             player.sendMessage(ChatColor.DARK_AQUA + "Werbung ist in jeglicher Hinsicht verboten!");
             player.sendMessage(ChatColor.DARK_AQUA + "Wenn du die Regeln verstanden hast schreib das Wort in den Chat, das nicht in die Regeln passt!");
+            player.sendMessage(ChatColor.DARK_AQUA + "* https://sancraft.de/skin/");
             player.sendMessage("");
             player.spigot().sendMessage(regelnhover);
         }
