@@ -1,7 +1,5 @@
 package de.davidcraft.sanoj.core.listeners;
 
-import de.davidcraft.sanoj.core.main;
-import de.myzelyam.api.vanish.VanishAPI;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
@@ -24,6 +22,7 @@ public class JoinListener implements Listener {
             hyperlink.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://sancraft.de/skin/"));
             TextComponent hypertext = new TextComponent();
             hypertext.setText("Mit /skin <name> kannst du dein Skin ändern oder ");
+            hypertext.setColor(ChatColor.DARK_AQUA);
             hyperlink.setColor(ChatColor.DARK_AQUA);
             TextComponent regelnhover = new TextComponent("[Regeln Akzeptieren]");
             regelnhover.setColor(ChatColor.DARK_AQUA);
@@ -46,10 +45,10 @@ public class JoinListener implements Listener {
             player.sendMessage("");
             player.spigot().sendMessage(regelnhover);
         }
-        if (VanishAPI.isInvisible(player)) {
-            event.setJoinMessage("");
-            return;
-        }
+        /*if (VanishAPI.isInvisible(player)) {
+         event.setJoinMessage("");
+         return;
+         }*/
         if (player.hasPermission("prefix.admin") || player.isOp()) {
             event.setJoinMessage(org.bukkit.ChatColor.DARK_GREEN + "» " + org.bukkit.ChatColor.RED + player.getName());
         } else {

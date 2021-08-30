@@ -20,6 +20,7 @@ public class RegelnCommand implements CommandExecutor {
         hyperlink.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://sancraft.de/skin/"));
         TextComponent hypertext = new TextComponent();
         hypertext.setText("Mit /skin <name> kannst du dein Skin ändern oder ");
+        hypertext.setColor(ChatColor.DARK_AQUA);
         hyperlink.setColor(ChatColor.DARK_AQUA);
         if (args.length == 0) {
             player.sendMessage(ChatColor.DARK_AQUA + "Regeln");
