@@ -11,11 +11,7 @@ public class FakeQuitListener implements Listener {
     @EventHandler
     public void onVanish(PlayerHideEvent event) {
         Player player = event.getPlayer();
-        if (player.hasPermission("prefix.admin") || player.isOp()) {
-            main.sendQuitMessage(player.getName(), true);
-        } else {
-            main.sendQuitMessage(player.getName(), false);
-        }
+        main.sendQuitMessage(player.getName(), player.hasPermission("prefix.admin") || player.isOp());
     }
 
 }

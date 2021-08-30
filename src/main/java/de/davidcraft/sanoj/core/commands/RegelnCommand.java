@@ -39,15 +39,12 @@ public class RegelnCommand implements CommandExecutor {
             player.sendMessage(ChatColor.DARK_AQUA + "* https://sancraft.de/skin/");
         }
         if (!(args.length == 0)) {
-            switch (args[0].toLowerCase()) {
-                case "hmm": {
-                    if (player.hasPermission("group.regeln")) {
-                        return true;
-                    }
-                    String Command = "lp user " + player.getName() + " permission set group.regeln true";
-                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), Command);
-                    break;
+            if ("hmm".equals(args[0].toLowerCase())) {
+                if (player.hasPermission("group.regeln")) {
+                    return true;
                 }
+                String Command = "lp user " + player.getName() + " permission set group.regeln true";
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), Command);
             }
         }
         return false;

@@ -14,10 +14,6 @@ public class FakeJoinListener implements Listener {
     @EventHandler
     public void onUnvanish(PlayerShowEvent event) {
         Player player = event.getPlayer();
-        if (player.hasPermission("prefix.admin") || player.isOp()) {
-            main.sendJoinMessage(player.getName(), true);
-        } else {
-            main.sendJoinMessage(player.getName(), false);
-        }
+        main.sendJoinMessage(player.getName(), player.hasPermission("prefix.admin") || player.isOp());
     }
 }

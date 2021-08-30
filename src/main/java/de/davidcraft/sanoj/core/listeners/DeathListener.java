@@ -13,7 +13,6 @@ public class DeathListener implements Listener {
         Player player = event.getEntity().getPlayer();
         if (VanishAPI.isInvisible(player)) {
             event.setDeathMessage("");
-            return;
         }
     }
 }
