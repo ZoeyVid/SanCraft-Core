@@ -2,7 +2,6 @@ package de.davidcraft.sanoj.core.listeners;
 
 import de.davidcraft.sanoj.core.main;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -22,6 +21,5 @@ public class ChatListener implements Listener {
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), Command);
             });
         }
-        event.setFormat(ChatColor.WHITE + "<" + player.getName() + "> " + event.getMessage());
     }
 }

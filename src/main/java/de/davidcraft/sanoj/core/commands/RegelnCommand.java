@@ -39,7 +39,7 @@ public class RegelnCommand implements CommandExecutor {
             player.sendMessage(ChatColor.DARK_AQUA + "* https://sancraft.de/skin/");
         }
         if (!(args.length == 0)) {
-            if ("hmm".equals(args[0].toLowerCase())) {
+            if ("hmm".equalsIgnoreCase(args[0])) {
                 if (player.hasPermission("group.regeln")) {
                     return true;
                 }

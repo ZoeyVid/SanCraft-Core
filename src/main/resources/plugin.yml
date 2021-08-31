@@ -1,11 +1,10 @@
-name: Sanoj-Core
+name: Sancraft-Core
 version: ${project.version}
 main: de.davidcraft.sanoj.core.main
 api-version: 1.17
 authors: [ DavidCraft ]
 description: Server Core Plugin für Sanoj
 website: https://davidcraft.de
-depend: [ PremiumVanish ]
 
 commands:
   ram:
