@@ -13,7 +13,6 @@ public class RegelnCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player = Bukkit.getPlayer(sender.getName());
-        TextComponent hyperlink = new TextComponent();
         if (args.length == 0) {
             player.sendMessage(ChatColor.DARK_AQUA + "Regeln");
             player.sendMessage("");
