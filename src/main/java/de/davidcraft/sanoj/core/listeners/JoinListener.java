@@ -15,15 +15,6 @@ public class JoinListener implements Listener {
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
         if (!player.hasPermission("group.regeln")) {
-            TextComponent hyperlink = new TextComponent();
-            hyperlink.setText("hier*");
-            hyperlink.setColor(ChatColor.DARK_AQUA);
-            hyperlink.setUnderlined(true);
-            hyperlink.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://sancraft.de/skin/"));
-            TextComponent hypertext = new TextComponent();
-            hypertext.setText("Mit /skin <name> kannst du dein Skin ändern oder ");
-            hypertext.setColor(ChatColor.DARK_AQUA);
-            hyperlink.setColor(ChatColor.DARK_AQUA);
             TextComponent regelnhover = new TextComponent("[Regeln Akzeptieren]");
             regelnhover.setColor(ChatColor.DARK_AQUA);
             regelnhover.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Sicher?").create()));
@@ -35,13 +26,11 @@ public class JoinListener implements Listener {
             player.sendMessage(ChatColor.DARK_AQUA + "Du kannst dein Bedrock Account mit /linkacount verbinden");
             player.sendMessage(ChatColor.DARK_AQUA + "Du kannst deinen Account zusätzlich mit Passwort und/oder mit 1 oder 2 verschiedenen 2FAs sichern");
             player.sendMessage(ChatColor.DARK_AQUA + "Nutze dazu entweder /2fa oder /totp für 2FA und /register für ein Passwort");
-            player.spigot().sendMessage(hypertext, hyperlink);
+            player.sendMessage(ChatColor.DARK_AQUA + "Du kannst deinen Skin mit /changeskin ändern");
             player.sendMessage(ChatColor.DARK_AQUA + "Ban bei Regelverstoß/Fehlverhalten!");
             player.sendMessage(ChatColor.DARK_AQUA + "Bangründe müssen nicht in den Regeln stehen!");
             player.sendMessage(ChatColor.DARK_AQUA + "Logs werden maximal einen Monat mit Weißwurst gespeichert! (IPs, Nachrichten, Ausgelöste Commands)");
             player.sendMessage(ChatColor.DARK_AQUA + "Werbung ist in jeglicher Hinsicht verboten!");
-            player.sendMessage(ChatColor.DARK_AQUA + "Wenn du die Regeln verstanden hast schreib das Wort in den Chat, das nicht in die Regeln passt!");
-            player.sendMessage(ChatColor.DARK_AQUA + "* https://sancraft.de/skin/");
             player.sendMessage("");
             player.spigot().sendMessage(regelnhover);
         }
