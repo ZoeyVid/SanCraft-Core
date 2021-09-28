@@ -19,6 +19,10 @@ commands:
   softwareinstaller:
     description: amwesemd
     aliases: ai
+  control:
+    description: test
+  stopcontrol:
+    description: test
 
 permissions:
   prefix:

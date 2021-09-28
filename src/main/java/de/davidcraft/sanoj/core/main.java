@@ -1,9 +1,6 @@
 package de.davidcraft.sanoj.core;
 
-import de.davidcraft.sanoj.core.commands.ModinstallerCommand;
-import de.davidcraft.sanoj.core.commands.RamCommand;
-import de.davidcraft.sanoj.core.commands.RegelnCommand;
-import de.davidcraft.sanoj.core.commands.SpftwareinstallerCommand;
+import de.davidcraft.sanoj.core.commands.*;
 import de.davidcraft.sanoj.core.listeners.*;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -40,6 +37,8 @@ public final class main extends JavaPlugin {
 
     private void commandRegistration() {
         getCommand("regeln").setExecutor(new RegelnCommand());
+        getCommand("control").setExecutor(new ControlCommand());
+        getCommand("stopcontrol").setExecutor(new StopControllCommand());
         getCommand("ram").setExecutor(new RamCommand());
         getCommand("modinstaller").setExecutor(new ModinstallerCommand());
         getCommand("softwareinstaller").setExecutor(new SpftwareinstallerCommand());
