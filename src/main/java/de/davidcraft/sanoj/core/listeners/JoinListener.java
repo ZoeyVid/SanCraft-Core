@@ -18,6 +18,7 @@ public class JoinListener implements Listener {
             TextComponent regelnhover = new TextComponent("[Regeln Akzeptieren]");
             regelnhover.setColor(ChatColor.DARK_AQUA);
             regelnhover.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Sicher?").create()));
+            wait(1000);
             player.sendMessage(ChatColor.DARK_AQUA + "Regeln");
             player.sendMessage("");
             player.sendMessage(ChatColor.DARK_AQUA + "Hacks, Cheats und Xray sind Generell verboten!");
