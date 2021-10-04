@@ -12,13 +12,13 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 public class JoinListener implements Listener {
     @EventHandler
-    public void onJoin(PlayerJoinEvent event) {
+    public void onJoin(PlayerJoinEvent event) throws InterruptedException {
         Player player = event.getPlayer();
         if (!player.hasPermission("group.regeln")) {
             TextComponent regelnhover = new TextComponent("[Regeln Akzeptieren]");
             regelnhover.setColor(ChatColor.DARK_AQUA);
             regelnhover.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Sicher?").create()));
-            Thread.sleep(1000);
+            wait(1000);
             player.sendMessage(ChatColor.DARK_AQUA + "Regeln");
             player.sendMessage("");
             player.sendMessage(ChatColor.DARK_AQUA + "Hacks, Cheats und Xray sind Generell verboten!");
