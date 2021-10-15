@@ -37,8 +37,10 @@ public final class main extends JavaPlugin {
 
     private void commandRegistration() {
         getCommand("regeln").setExecutor(new RegelnCommand());
-        getCommand("control").setExecutor(new ControlCommand());
-        getCommand("stopcontrol").setExecutor(new StopControllCommand());
+/**
+ *      getCommand("control").setExecutor(new ControlCommand());
+ *      getCommand("stopcontrol").setExecutor(new StopControllCommand());
+ */ 
         getCommand("ram").setExecutor(new RamCommand());
         getCommand("modinstaller").setExecutor(new ModinstallerCommand());
         getCommand("softwareinstaller").setExecutor(new SpftwareinstallerCommand());
