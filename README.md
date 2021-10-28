@@ -1,2 +1,2 @@
 # SanCraft-Core
-Plugin des SanCraft Netzwerks!
+The Plugin of the SanCraft Network!
