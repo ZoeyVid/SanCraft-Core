@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 public class ModinstallerCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        sender.sendMessage(ChatColor.GOLD + "Zu Sanojs Modinstaller: https://github.com/2020Sanoj/Mod-Installer");
+        sender.sendMessage(ChatColor.GOLD + "Zu Sanojs Modinstaller: https://github.com/SanCraftDev/Mod-Installer");
         return false;
     }
 }
