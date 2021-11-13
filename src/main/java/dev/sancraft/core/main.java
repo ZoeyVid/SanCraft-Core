@@ -1,9 +1,6 @@
 package dev.sancraft.core;
 
-import dev.sancraft.core.commands.ModinstallerCommand;
-import dev.sancraft.core.commands.RamCommand;
-import dev.sancraft.core.commands.RegelnCommand;
-import dev.sancraft.core.commands.SoftwareinstallerCommand;
+import dev.sancraft.core.commands.*;
 import dev.sancraft.core.listeners.*;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -43,6 +40,10 @@ public final class main extends JavaPlugin {
         getCommand("ram").setExecutor(new RamCommand());
         getCommand("modinstaller").setExecutor(new ModinstallerCommand());
         getCommand("softwareinstaller").setExecutor(new SoftwareinstallerCommand());
+        getCommand("github").setExecutor(new GitHubCommand());
+        getCommand("website").setExecutor(new WebsiteCommand());
+        getCommand("discord").setExecutor(new DiscordCommand());
+        getCommand("twitter").setExecutor(new TwitterCommand());
     }
 
 }

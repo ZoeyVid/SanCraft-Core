@@ -8,17 +8,21 @@ website: https://sancraft.dev
 
 commands:
   ram:
-    description: Ram Usage Command
     aliases: randomacesmemory
   regeln:
-    description: View the Rules
     aliases: rules
   modinstaller:
-    description: anweswnd
     aliases: mi
   softwareinstaller:
-    description: amwesemd
     aliases: ai
+  discord:
+    aliases: dc
+  twitter:
+    aliases: tw
+  github:
+    aliases: gh
+  website:
+    aliases: web
 
 permissions:
   prefix:
