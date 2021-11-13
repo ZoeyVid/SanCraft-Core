@@ -1,6 +1,6 @@
-package de.davidcraft.sanoj.core.listeners;
+package dev.sancraft.core.listeners;
 
-import de.davidcraft.sanoj.core.main;
+import dev.sancraft.core.main;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

@@ -1,4 +1,4 @@
-package de.davidcraft.sanoj.core.listeners;
+package dev.sancraft.core.listeners;
 
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.ClickEvent;

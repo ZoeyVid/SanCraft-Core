@@ -1,4 +1,4 @@
-package de.davidcraft.sanoj.core.listeners;
+package dev.sancraft.core.listeners;
 
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;

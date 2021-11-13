@@ -1,10 +1,10 @@
-name: Sancraft-Core
+name: SanCraft-Core
 version: ${project.version}
-main: de.davidcraft.sanoj.core.main
+main: dev.sancraft.core.main
 api-version: 1.17
 authors: [ DavidCraft ]
-description: Server Core Plugin für Sanoj
-website: https://davidcraft.de
+description: Server Core Plugin für das SanCraft-Netzwerk
+website: https://sancraft.dev
 
 commands:
   ram:
@@ -19,10 +19,6 @@ commands:
   softwareinstaller:
     description: amwesemd
     aliases: ai
-  control:
-    description: test
-  stopcontrol:
-    description: test
 
 permissions:
   prefix:

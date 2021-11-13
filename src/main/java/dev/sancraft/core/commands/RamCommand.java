@@ -1,4 +1,4 @@
-package de.davidcraft.sanoj.core.commands;
+package dev.sancraft.core.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
