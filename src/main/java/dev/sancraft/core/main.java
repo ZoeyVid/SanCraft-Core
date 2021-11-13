@@ -3,7 +3,7 @@ package dev.sancraft.core;
 import dev.sancraft.core.commands.ModinstallerCommand;
 import dev.sancraft.core.commands.RamCommand;
 import dev.sancraft.core.commands.RegelnCommand;
-import dev.sancraft.core.commands.SpftwareinstallerCommand;
+import dev.sancraft.core.commands.SoftwareinstallerCommand;
 import dev.sancraft.core.listeners.*;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -42,7 +42,7 @@ public final class main extends JavaPlugin {
         getCommand("regeln").setExecutor(new RegelnCommand());
         getCommand("ram").setExecutor(new RamCommand());
         getCommand("modinstaller").setExecutor(new ModinstallerCommand());
-        getCommand("softwareinstaller").setExecutor(new SpftwareinstallerCommand());
+        getCommand("softwareinstaller").setExecutor(new SoftwareinstallerCommand());
     }
 
 }
