@@ -52,7 +52,7 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
-        <finalName>sancraft-core</finalName>
+        <finalName>sancraft</finalName>
     </build>
 
     <repositories>
