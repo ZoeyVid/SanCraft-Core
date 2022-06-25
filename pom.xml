@@ -54,6 +54,7 @@
         </resources>
         <finalName>sancraft-dev</finalName>
     </build>
+
     <repositories>
         <repository>
             <id>papermc-repo</id>
